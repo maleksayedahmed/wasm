@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASM Innovation - Where Brands Become Experiences</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- Left Links -->
+        <div class="nav-links-left">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <!-- Center Brand -->
+        <div class="nav-brand-center">
+            <!-- Using text or img based on your preference, sizing handled in CSS -->
+            <img src="logo.svg" alt="WASM" class="nav-logo">
+        </div>
+
+        <!-- Right Links + Button -->
+        <div class="nav-links-right">
+            <!-- Grouping text links to keep them near the logo -->
+            <div class="nav-links-group">
+                <a href="#team">Team</a>
+                <a href="#partners">Partner</a>
+                <a href="#footprint">Footprint</a>
+            </div>
+
+            <!-- Button pushed to the end -->
+            <a href="#contact" class="btn btn-cyan">
+                let’s Talk <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
+            <a href="#partners">Partner</a>
+            <a href="#footprint">Footprint</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('wasm-slider2.png'); background-size: cover;"></div>
+            <div class="slide active"
+                style="background-image: url('assets/sliders/slider1.jpeg'); background-size: cover;"></div>
+            <div class="slide active"
+                style="background-image: url('assets/sliders/slider2.jpeg'); background-size: cover;"></div>
+            <!-- <div class="slide active" style="background-image: url('assets/sliders/slider3.jpeg'); background-size: cover;"></div> -->
+            <!-- <div class="slide" style="background-image: url('assets/images/mashareq.jpeg'); background-size: cover;"></div> -->
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>WHERE BRANDS <br> BECOME EXPERIENCES</h1>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-glass">Discover Our Work</a>
+                <a href="#contact" class="btn btn-cyan">Start Your Exercise <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-footer">
+            <div class="hero-footer-left">
+                <div class="social-links-hero">
+                    <!-- <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a> -->
+                    <a href="https://www.linkedin.com/in/wasm-innovation-19a47a398" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/wasm_innovation" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                </div>
+
+                <div class="slider-dots-hero">
+                    <span class="hero-dot active" data-slide="0"></span>
+                    <span class="hero-dot" data-slide="1"></span>
+                    <span class="hero-dot" data-slide="2"></span>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Discover</span>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-badge"> <i class="fas fa-circle about-us-dot"></i> About Us</div>
+        <h2>Creating Experiences That Inspire</h2>
+        <p class="section-desc">
+            At Wasm Innovation, we create experiences that inspire people and strengthen brands.
+            From major events and exhibitions to immersive Production & Activations, EXHIBITIONS & TRADESHOWS campaigns,
+            and brand collaborations,<span class="light-section-desc"> we bring strategy, storytelling, and design
+                together to shape moments that last.</span>
+        </p>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="card-icon-arrow"><i class="fas fa-arrow-right"></i></div>
+                <h3>OUR MISSION</h3>
+                <p>To deliver experiences that bring brands to life through creativity, precision, and purpose.</p>
+            </div>
+            <div class="value-card value-middle-card">
+                <div class="card-icon-arrow"><i class="fas fa-arrow-right"></i></div>
+                <h3>OUR VISION</h3>
+                <p>To be a leading force in experiential EXHIBITIONS & TRADESHOWS; creating moments that inspire,
+                    connect, and
+                    <b style="color: #fff;">leave</b> a lasting impression.
+                </p>
+            </div>
+            <div class="value-card">
+                <div class="card-icon-arrow"><i class="fas fa-arrow-right"></i></div>
+                <h3>OUR VALUES</h3>
+                <p>Creativity, Commitment, Sustainability</p>
+            </div>
+        </div>
+
+        <!-- Stats Section (Background Lines) -->
+        <div class="stats-section">
+            <!-- SVG Background -->
+            <svg class="stats-lines" viewBox="0 0 1440 320" preserveAspectRatio="none">
+
+                <!-- Background Lines -->
+                <path class="bg-line" d="M0,40   C360,130 1080,130 1440,40" />
+                <path class="bg-line" d="M-190,70   C360,140 1080,140 1440,70" />
+                <path class="bg-line" d="M0,150  C360,150 1080,150 1440,150" />
+                <path class="bg-line" d="M-190,230  C360,160 1080,160 1440,230" />
+                <path class="bg-line" d="M-190,260  C360,170 1080,170 1440,260" />
+
+                <!-- Defs (Only needed for the tail gradient now) -->
+                <defs>
+                    <linearGradient id="meteor-tail" x1="100%" y1="0%" x2="0%" y2="0%">
+                        <stop offset="0%" style="stop-color:#33C5F4; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#33C5F4; stop-opacity:0" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Meteors -->
+                <!-- 
+       FIX DETAILS:
+       1. Replaced <circle> with <path d="M0,0 L0,0"> (Zero length line).
+       2. Added stroke-linecap="round" to make the line a dot.
+       3. Added vector-effect="non-scaling-stroke" to prevent squishing.
+       4. REPLACED filter="url(#glow)" with style="filter: drop-shadow(...)" 
+          so the glow doesn't get clipped by the zero-size bounding box.
+    -->
+
+                <g class="meteor-grp m-line-1">
+                    <path d="M-100,0 L0,0" stroke="url(#meteor-tail)" stroke-width="3" />
+                    <path d="M0,0 L0,0" stroke="#fff" stroke-width="6" stroke-linecap="round"
+                        vector-effect="non-scaling-stroke" style="filter: drop-shadow(0 0 4px #fff);" />
+                </g>
+
+                <g class="meteor-grp m-line-2">
+                    <path d="M-100,0 L0,0" stroke="url(#meteor-tail)" stroke-width="3" />
+                    <path d="M0,0 L0,0" stroke="#fff" stroke-width="6" stroke-linecap="round"
+                        vector-effect="non-scaling-stroke" style="filter: drop-shadow(0 0 4px #fff);" />
+                </g>
+
+                <g class="meteor-grp m-line-3">
+                    <path d="M-100,0 L0,0" stroke="url(#meteor-tail)" stroke-width="3" />
+                    <path d="M0,0 L0,0" stroke="#fff" stroke-width="6" stroke-linecap="round"
+                        vector-effect="non-scaling-stroke" style="filter: drop-shadow(0 0 4px #fff);" />
+                </g>
+
+                <g class="meteor-grp m-line-4">
+                    <path d="M-100,0 L0,0" stroke="url(#meteor-tail)" stroke-width="3" />
+                    <path d="M0,0 L0,0" stroke="#fff" stroke-width="6" stroke-linecap="round"
+                        vector-effect="non-scaling-stroke" style="filter: drop-shadow(0 0 4px #fff);" />
+                </g>
+
+                <g class="meteor-grp m-line-5">
+                    <path d="M-100,0 L0,0" stroke="url(#meteor-tail)" stroke-width="3" />
+                    <path d="M0,0 L0,0" stroke="#fff" stroke-width="6" stroke-linecap="round"
+                        vector-effect="non-scaling-stroke" style="filter: drop-shadow(0 0 4px #fff);" />
+                </g>
+
+            </svg>
+
+
+
+
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="stat-number" data-target="65">+00</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="150">+000</span>
+                    <span class="stat-label">Events</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="40">+00</span>
+                    <span class="stat-label">Employees</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="73">+00</span>
+                    <span class="stat-label">Cumulative <br> Experiences</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-header">
+            <h2>WHAT WE DO?</h2>
+            <span class="line"></span>
+        </div>
+
+        <div class="services-grid">
+            <!-- 1. Brand Experiences -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Brand Experiences</h3>
+            </div>
+            <!-- 2. Event Activation -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Event Activation</h3>
+            </div>
+            <!-- 3. Consultancy -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Consultancy</h3>
+            </div>
+            <!-- 4. EXHIBITIONS & TRADESHOWS Campaigns -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>EXHIBITIONS & TRADESHOWS Campaigns</h3>
+            </div>
+            <!-- 5. Crowd Management -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Crowd Management and Accreditation</h3>
+            </div>
+            <!-- 6. Employee Engagement -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Employee Engagement Events</h3>
+            </div>
+            <!-- 7. Giveaways -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Giveaways</h3>
+            </div>
+            <!-- 8. Exhibition and Tradeshows -->
+            <div class="service-item">
+                <div class="diamond">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Exhibition and Tradeshows</h3>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#contact" class="btn btn-white">Start your experience <i
+                    class="fas fa-chevron-right apply-now-arrow"></i></a>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="projects-section">
+
+        <div class="services-header">
+            <h2>PROJECT</h2>
+            <span class="line"></span>
+        </div>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="Brand Experiences">Brand Experiences</button>
+            <button class="filter-btn" data-filter="EXHIBITIONS & TRADESHOWS">EXHIBITIONS & TRADESHOWS</button>
+            <button class="filter-btn" data-filter="Production & Activations">Production & Activations</button>
+        </div>
+
+        <div class="projects-slider-container">
+            <div class="projects-slider">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="EXHIBITIONS & TRADESHOWS">
+                    <div class="project-bg" style="background-image: url('assets/images/Almajdouie.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>Almajdouie Peugeot & Citroën</h3>
+                            <h4>Jeddah, 2023</h4>
+                            <p>Production, Activation Management</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-category="Brand Experiences">
+                    <div class="project-bg" style="background-image: url('assets/images/porche.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>SAMACO</h3>
+                            <h4>Riyadh, Jeddah, Dammam</h4>
+                            <p>Brand activation,
+                                Media campaign,
+                                Test drives,
+                                Media drive experience</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-category="Production & Activations">
+                    <div class="project-bg" style="background-image: url('assets/images/retal.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>RETAL URBAN DEV
+                                HOARDINGS</h3>
+                            <!-- <h4>Launch Event - 2023</h4> -->
+                            <p>PRODUCTION & ACTIVATIONS</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="Production & Activations">
+                    <div class="project-bg" style="background-image: url('assets/images/QIDDYAH.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>QIDDYAH
+                                AL-AWAL PARK
+                                ACTIVATION</h3>
+                            <!-- <h4>Launch Event - 2023</h4> -->
+                            <p>Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="Production & Activations">
+                    <div class="project-bg" style="background-image: url('assets/images/nissan.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>NISSAN PETROMIN
+                                NATIONAL DAY
+                                ACTIVATION</h3>
+                            <h4>Riyadh, 2024
+                            </h4>
+                            <p>Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="EXHIBITIONS & TRADESHOWS">
+                    <div class="project-bg" style="background-image: url('assets/images/mashareq.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>MASHAREQ CO.
+                                HAJJ & UMRAH
+                                EXHIBITION</h3>
+                            <h4>Jeddah, 2024</h4>
+                            <p>Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="EXHIBITIONS & TRADESHOWS">
+                    <div class="project-bg" style="background-image: url('assets/images/thakher.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>THAKHER
+                                DEVELOPMENT</h3>
+                            <h4>Cityscape 2024</h4>
+                            <p>Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="EXHIBITIONS & TRADESHOWS">
+                    <div class="project-bg" style="background-image: url('assets/images/almshiah.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>AL MASIAH
+                                HAJJ & UMRAH
+                                EXHIBITION</h3>
+                            <h4>Jeddah - 2024</h4>
+                            <p>Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="EXHIBITIONS & TRADESHOWS">
+                    <div class="project-bg" style="background-image: url('assets/images/nourent.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>NOURNET
+                                LEAP
+                            </h3>
+                            <h4>Riyadh - 2024</h4>
+                            <p>Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="Brand Experiences">
+                    <div class="project-bg" style="background-image: url('assets/images/porche2.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>PORSCHE</h3>
+                            <h4>Riyadh - 2019</h4>
+                            <p>Brand activation, Media campaign</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="Brand Experiences">
+                    <div class="project-bg" style="background-image: url('assets/images/BENTLEY.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>BENTLEY LAUNCH</h3>
+                            <h4>Riyadh - 2019</h4>
+                            <p>Launching Ceremony, Product Activation, Media Campaign</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="Brand Experiences">
+                    <div class="project-bg" style="background-image: url('assets/images/FORMULA.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>FORMULA E</h3>
+                            <h4>Al Majdouie
+                                Diriyah- 2024</h4>
+                            <p>Stage Implementation Guest, Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="Brand Experiences">
+                    <div class="project-bg" style="background-image: url('assets/images/porche911.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>PORSCHE
+                                911 LAUNCH</h3>
+                            <h4>Jeddah - 2012</h4>
+                            <p>Event Planning, Event Design, Production, Media Coverage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="Brand Experiences">
+                    <div class="project-bg" style="background-image: url('assets/images/TATA.jpeg');">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <h3>TATA IPL
+                                AUCTION</h3>
+                            <h4>Jeddah - 2025</h4>
+                            <p>Event Planning, Managing Permits & Logistics, Event Design, Production</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footprint Section -->
+    <section id="partners" class="partners-section">
+
+        <div class="services-header">
+            <h2>OUR PROJECT FOOTPRINT</h2>
+            <span class="line"></span>
+        </div>
+        <div class="logos-grid">
+            <!-- Simulated Logos -->
+            <div class="logo-item"><img src="assets/logos/stc.svg" alt="stc"></div>
+            <div class="logo-item"><img src="assets/logos/qiyadda.svg" alt="Qiddiya"></div>
+            <div class="logo-item"><img src="assets/logos/safe.png" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/mashareq.png" alt="mashareq"></div>
+
+            <div class="logo-item"><img src="assets/logos/almajdouie.png" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/arabian homes.png" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/Bentley Motors.png" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/Bridgestone_(8).svg" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/Citroen New 2022.svg" alt="safe"></div>
+            <!-- <div class="logo-item"><img src="assets/logos/F1 Formula One World Championship - 1994 version.svg" alt="safe"></div> -->
+            <div class="logo-item"><img src="assets/logos/Four-Seasons-Logo-500x281.png" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/Peugeot New Black Line.svg" alt="safe"></div>
+            <div class="logo-item"><img src="assets/logos/jeda season.svg" alt="safe"></div>
+
+
+            <!-- <div class="logo-item"><img src="qiyadda.svg" alt="Qiddiya"></div>
+            <div class="logo-item"><img src="mashareq.png" alt="mashareq"></div>
+            <div class="logo-item"><img src="safe.png" alt="safe"></div>
+            <div class="logo-item"><img src="stc.svg" alt="stc"></div>
+            <div class="logo-item"><img src="mashareq.png" alt="mashareq"></div>
+            <div class="logo-item"><img src="safe.png" alt="safe"></div>
+
+
+            <div class="logo-item"><img src="stc.svg" alt="stc"></div>
+            <div class="logo-item"><img src="qiyadda.svg" alt="Qiddiya"></div>
+            <div class="logo-item"><img src="safe.png" alt="safe"></div>
+            <div class="logo-item"><img src="mashareq.png" alt="mashareq"></div>
+            <div class="logo-item"><img src="safe.png" alt="safe"></div>
+            <div class="logo-item"><img src="mashareq.png" alt="mashareq"></div> -->
+
+
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="section-badge"> <i class="fas fa-circle about-us-dot"></i>WASM Chairman</div>
+
+        <div class="team-highlight">
+
+            <!-- Left Side: Image with offset border -->
+            <div class="team-visual">
+                <div class="team-img-frame">
+                    <div class="team-img" style="background-image: url('team.png');"></div>
+                </div>
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="team-content">
+                <span class="team-role">Chairman</span>
+                <h3 class="team-name">ABDULLAH ALREFAE</h3>
+                <div class="team-bio">
+                    <p>
+                        As the chairman of WASM innovation, Abdullah Alrefae brings a fresh perspective to the
+                        marketing landscape. With a passion for innovation and a commitment to excellence, he
+                        is dedicated to establishing the agency as a go-to partner for creative solutions.
+                    </p>
+                </div>
+                <!-- Optional: Signature or Social icons could go here -->
+            </div>
+
+            <!-- Decorative Background text (kept as requested) -->
+            <div class="team-bg-text">
+                WASM <br> INNOVATION
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Top Section: CTA & Watermark -->
+        <div class="footer-cta-section">
+            <!-- The big background text (Watermark) -->
+            <div class="cta-watermark">WASM</div>
+
+            <div class="cta-content">
+                <h2>WHERE BRANDS <br> BECOME EXPERIENCES</h2>
+                <a href="#" class="btn-cyan">
+                    Start Your Exercise <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Links & Info -->
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <!-- Replace src with your actual logo path -->
+                    <img src="logo.svg" alt="WASM Innovation" class="footer-logo">
+                </div>
+
+                <!-- Column 2: Quick Links (Split into 2 sub-columns) -->
+                <div class="footer-col links-col">
+                    <h4>Quick Links</h4>
+                    <div class="links-group">
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Projects</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Partner</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Footprint</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-col contact-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li><a href="tel:+9668223835"><i class="fas fa-phone-alt"></i> +9668223835</a></li>
+                        <li><a href="mailto:WASM@gmail.com"><i class="fas fa-envelope"></i> WASM@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social Media -->
+                <div class="footer-col social-col">
+                    <h4>Follow Us Social Media</h4>
+                    <div class="social-links-hero">
+                        <a href="https://www.linkedin.com/in/wasm-innovation-19a47a398" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/wasm_innovation" target="_blank"><i class="fab fa-instagram"></i></a>
+                    
+                        <!-- <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom-bar">
+                Copyright © 2025 WASM Innovation - All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
