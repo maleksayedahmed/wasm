@@ -540,7 +540,7 @@ h4 {
     /* allow narrower columns on small screens to avoid overflow */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    margin: 0 auto 100px;
+    margin: 0 auto -44px;
     max-width: var(--container-width);
     padding: 0 20px;
     box-sizing: border-box;
@@ -578,6 +578,7 @@ h4 {
     transition: 0.3s;
     /* Optional: Add slight inner glow or shadow */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
 @media (min-width: 1200px) {
@@ -629,6 +630,8 @@ h4 {
     padding: 200px 0;
     background: radial-gradient(ellipse at center, rgb(76 117 135 / 38%) 0%, rgb(5 6 8 / 0%) 50%);
     overflow: hidden;
+    margin-bottom: -64px;
+
     /* border-top: 1px solid rgba(255, 255, 255, 0.05); */
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
 }
@@ -639,7 +642,7 @@ h4 {
     content: '';
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 54px;
     width: 20%;
     /* How "narrow" you want the center to act. Increase for more narrowness */
     z-index: 1;
@@ -653,7 +656,7 @@ h4 {
     left: 0;
     /* Replace #050608 with your exact body background color */
     background: linear-gradient(to right, #101215 0%, transparent 100%);
-    z-index: 999;
+    z-index: 9;
 }
 
 /* 4. Right Fade (Transparent to Dark) */
@@ -820,10 +823,14 @@ h4 {
 
 }
 
+/* Container */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 columns for large screens */
+    display: flex;
+    /* Changed from grid to flex */
+    flex-wrap: wrap;
+    /* Allows items to wrap to next line */
+    justify-content: center;
+    /* This ensures the last row items are centered */
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto 60px;
@@ -831,11 +838,15 @@ h4 {
 
 /* Card Design */
 .service-item {
+    /* Flex Sizing Logic */
+    /* Formula: (100% width - (Total Gap Space)) / Number of columns */
+    /* 4 Columns means 3 gaps of 30px = 90px */
+    flex: 0 0 calc((100% - 90px) / 4);
+
+    /* Existing Styles */
     background-color: #12151a;
-    /* Dark gray similar to image */
     border-radius: 28px;
     padding: 60px 20px 40px;
-    /* Top padding accomodates diamond */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -843,9 +854,11 @@ h4 {
     justify-content: center;
     min-height: 140px;
     margin-top: 40px;
-    /* Space for the floating diamond */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+
+    /* Ensure padding/border doesn't break width calculations */
+    box-sizing: border-box;
 }
 
 .service-item:hover {
@@ -853,21 +866,18 @@ h4 {
     background-color: #161a20;
 }
 
-/* Diamond Floating Element */
+/* Diamond Floating Element (Unchanged) */
 .diamond {
     width: 60px;
     height: 60px;
     background: #58CCED;
-    /* Cyan color */
     transform: rotate(45deg);
     position: absolute;
     top: -30px;
-    /* Float on top edge */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    /* Slightly rounded diamond corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     z-index: 2;
     border: 5px solid #0b0d10;
@@ -877,7 +887,6 @@ h4 {
     transform: rotate(-45deg);
     font-size: 18px;
     color: #000;
-    /* Black star */
 }
 
 .service-item h3 {
@@ -890,18 +899,21 @@ h4 {
     max-width: 90%;
 }
 
-/* Responsive Grid */
+/* Responsive Logic */
+
+/* Tablet: 2 Columns */
 @media (max-width: 1024px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 columns tablet */
+    .service-item {
+        /* 2 Columns means 1 gap of 30px */
+        flex: 0 0 calc((100% - 30px) / 2);
     }
 }
 
+/* Mobile: 1 Column */
 @media (max-width: 600px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-        /* 1 column mobile */
+    .service-item {
+        /* 1 Column means 0 gaps */
+        flex: 0 0 100%;
     }
 }
 
