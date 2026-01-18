@@ -1153,7 +1153,7 @@ h4 {
 
 @media (min-width: 769px) {
     .logos-grid {
-        grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
     }
 }
 
